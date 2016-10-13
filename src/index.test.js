@@ -23,5 +23,13 @@ describe('lol-heroes', function(){
             var randomItem = lolHeroes.random();
             expect(lolHeroes.all).to.include(randomItem);
         });
+
+        it('should return an array of random items if passed a number', function(){
+            var randomItems = lolHeroes.random(3);
+            expect(randomItems).to.have.length(3);
+            randomItems.forEach(function(item){
+                expect(lolHeroes.all).to.include(item);
+            });
+        });
     });
 });
