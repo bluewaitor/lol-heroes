@@ -1,5 +1,5 @@
-var uniqueRandomArray = require('unique-random-array');
-var lolHeroes = require('./lol-heroes.json');
+import uniqueRandomArray from 'unique-random-array';
+import lolHeroes from './lol-heroes.json';
 var getRandomItem = uniqueRandomArray(lolHeroes);
 module.exports = {
     all: lolHeroes,

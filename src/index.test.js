@@ -1,5 +1,5 @@
-var expect = require('chai').expect;
-var lolHeroes = require('./index');
+import {expect}  from 'chai';
+import lolHeroes from './index';
 
 describe('lol-heroes', function(){
     describe('all', function(){
